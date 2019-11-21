@@ -21,14 +21,14 @@ public class Main {
         // a)
         var r = 0.5; var K = 10;
         var y_0 = 1; var h = 0.05;
-
+        System.out.println("r = 0.5; K = 10; y_0 = 1; h = 0.05;");
         solveWithEulerAndPrintResults(r, K, y_0, h, 0, 4, true);
 
         // b) Variando parâmetros:
         r = 0.5; K = 10;
         y_0 = 1; h = 0.01;
 
-        System.out.println("[Decreasing h]");
+        System.out.println("[Decreasing h to 0.01]");
         solveWithEulerAndPrintResults(r, K, y_0, h, 0, 4, true);
         // Quanto menor o h, maior a precisão
 
@@ -36,7 +36,7 @@ public class Main {
         r = 0.5; K = 100;
         y_0 = 1; h = 0.05;
 
-        System.out.println("[Increasing K]");
+        System.out.println("[Increasing K to 100]");
         solveWithEulerAndPrintResults(r, K, y_0, h, 0, 4, true);
         // Com a mudança do K, não há mudança muito expressiva no resultado
 
@@ -44,7 +44,7 @@ public class Main {
         r = 0.5; K = 10;
         y_0 = 5; h = 0.05;
 
-        System.out.println("[Increasing y_0]");
+        System.out.println("[Increasing y_0 to 5]");
         solveWithEulerAndPrintResults(r, K, y_0, h, 0, 4, true);
         // Com o aumento do y_0, houve um aumento de precisão,
         // provavelmente pelo fato dos resultados terem maior valor
@@ -78,7 +78,10 @@ public class Main {
         var solution = new VerhulstLogisticSolution(r, k, y_0);
 
         System.out.println("Euler method: ");
+        var startTime = System.currentTimeMillis();
         System.out.println(EDOSolver.eulerSolve(derivative, interval, h, y_0));
+        var elapsed = System.currentTimeMillis() - startTime;
+        System.out.println("Euler method took " + elapsed + "ms");
         System.out.println();
         if (printAnalytical) {
             solveAnalyticallyAndPrintResults(h, interval, solution);
@@ -91,7 +94,10 @@ public class Main {
         var solution = new VerhulstLogisticSolution(r, k, y_0);
 
         System.out.println("Runge-Kutta method: ");
+        var startTime = System.currentTimeMillis();
         System.out.println(EDOSolver.rungeKuttaSolve(derivative, interval, h, y_0));
+        var elapsed = System.currentTimeMillis() - startTime;
+        System.out.println("Runge-Kutta method took " + elapsed + "ms");
         System.out.println();
         if (printAnalytical) {
             solveAnalyticallyAndPrintResults(h, interval, solution);
