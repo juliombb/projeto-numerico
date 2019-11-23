@@ -3,6 +3,7 @@ package com.unicamp;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -231,7 +232,10 @@ class Interval {
     }
 
     List<Double> range(double step) {
-        final int maxSize = (int) Math.round(Math.ceil( (end-start)/step ));
+        if (step == 0) { return Collections.emptyList(); }
+
+        final int maxSize =
+            (int) Math.round(Math.ceil( (end-start)/step ));
         final var range = new ArrayList<Double>(maxSize);
 
         for (double i = start; (i - end) <= EPSILON; i += step) {
