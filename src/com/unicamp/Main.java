@@ -124,7 +124,7 @@ class EDOSolver {
 
         for (double x : range) {
             newList.add(new Point(x, MathExtension.round(lastValue)));
-                // the first value will be the (x_0, y_0)
+                // primeiro valor será (x_0, y_0)
 
             lastValue = lastValue + step * function.evaluate(x, lastValue);
         }
@@ -142,7 +142,7 @@ class EDOSolver {
 
         for (double x : range) {
             newList.add(new Point(x, MathExtension.round(lastValue)));
-            // the first value will be the (x_0, y_0)
+            // primeiro valor será (x_0, y_0)
 
             final var k1 = function.evaluate(x, lastValue);
             final var k2 = function.evaluate(x + step/2, lastValue + k1 * step/2);

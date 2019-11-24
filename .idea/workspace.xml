@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e51650a1-a398-4d14-b38c-e7cd44842f5f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/EDOSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/EDOSolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/Interval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/Interval.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/MathExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/MathExtension.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/VerhulstLogisticDerivative.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/VerhulstLogisticDerivative.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/VerhulstLogisticSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projeto_numerico/com/unicamp/VerhulstLogisticSolution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/unicamp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/unicamp/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,7 +116,7 @@
       <updated>1574262181867</updated>
       <workItem from="1574262185625" duration="9446000" />
       <workItem from="1574305182176" duration="2913000" />
-      <workItem from="1574543967871" duration="331000" />
+      <workItem from="1574543967871" duration="2896000" />
     </task>
     <servers />
   </component>
